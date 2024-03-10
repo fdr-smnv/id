@@ -1,0 +1,8 @@
+const path = require('path');
+const dbFolderPath = path.resolve('src','infra','persistence','postgresql','sequelize-orm')
+
+module.exports = {
+  'config': path.resolve(dbFolderPath,'config', 'config.js'),
+  'seeders-path': path.resolve(dbFolderPath, 'seeders'),
+  'migrations-path': path.resolve(dbFolderPath, 'migrations')
+};
